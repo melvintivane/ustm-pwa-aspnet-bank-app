@@ -7,9 +7,10 @@ O projeto parteII_pwa_teste é uma aplicação web desenvolvida em ASP.NET Core 
 ```shell
    1. Clone este repositório
    2. dotnet tool install --global dotnet-ef
-   3. dotnet ef migrations add InitialMigration
-   4. dotnet ef database update
-   5. dotnet run
+   3. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+   4. dotnet ef migrations add InitialMigration
+   5. dotnet ef database update
+   6. dotnet run
 ```
 
 ## Estrutura do Projeto
