@@ -1,0 +1,27 @@
+@model parteII_pwa_teste.Models.UpdateConta
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>Editar Contacto</h1>
+<form action="Edit" method="post">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control mb-3" placeholder="Jonh" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Número da Conta</label>
+        <input type="text" class="form-control mb-3" placeholder="Jonh" asp-for="NumeroDaConta" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Titular</label>
+        <input type="text" class="form-control mb-3" placeholder="Jonh" asp-for="Titular">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control mb-3" placeholder="Doe" asp-for="Email">
+    </div>
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Conta">Apagar</button>
+</form>

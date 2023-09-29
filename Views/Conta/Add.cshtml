@@ -1,0 +1,18 @@
+@model parteII_pwa_teste.Models.AddConta
+
+@{
+    ViewData["Title"] = "Add Contact";
+}
+
+<h1>Adicionar Contacto</h1>
+<form action="Add" method="post">
+    <div class="mb-3">
+        <label for="" class="form-label">Titular</label>
+        <input type="text" class="form-control mb-3" placeholder="Jonh Doe" asp-for="Titular">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control mb-3" placeholder="jonhdoe@gmail.com" asp-for="Email">
+    </div>
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+</form>

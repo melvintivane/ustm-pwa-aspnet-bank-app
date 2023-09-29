@@ -1,0 +1,33 @@
+@model List<parteII_pwa_teste.Models.Conta>
+
+@{
+    ViewData["Title"] = "Edit Page";
+}
+
+<h1>Editar Conta</h1>
+<div class="text-center">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Número da Conta</th>
+                <th scope="col">Titular</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var conta in Model)
+            {
+                <tr>
+                    <th>@conta.Id</th>
+                    <td>@conta.NumeroDaConta</td>
+                    <td>@conta.Titular</td>
+                    <td>@conta.Email</td>
+                    <td>
+                        <a href="/Conta/Edit/@conta.Id">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
